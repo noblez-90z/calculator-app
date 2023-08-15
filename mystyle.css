@@ -1,0 +1,135 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 39%, 66%); }
+*{
+    margin: 10px auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   height: 100vh;
+   background-color: hsl(222, 26%, 31%);
+   
+}
+main{
+    border: none;
+    width: 500px;
+    min-width: 300px;
+    height: 600px;
+    background-color: hsl(222, 26%, 31%);
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px auto;
+}
+h2{
+    margin-left: 20px;
+    color: whitesmoke;
+}
+.theme{
+     display: flex;
+     align-items: center;
+     margin-right: 20px;
+     gap: 8px;
+}
+h5{
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+p{
+    display: inline;
+    padding: 5px;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.box{
+    border: 2px solid black;
+    width: 60px;
+    height: 22px;
+    border-radius: 20px;
+    background-color: hsl(223, 31%, 20%);
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.screen{
+    border: 2px solid black;
+    width: 460px;
+    border-radius: 10px;
+    background-color: hsl(224, 36%, 15%);
+}
+h1{
+    text-align: end;
+    padding: 10px;
+    color: whitesmoke;
+}
+.calc{
+    border: none;
+    width: 460px;
+    height: 375px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color:  hsl(223, 31%, 20%);
+}
+.hero{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 5px;
+    
+}
+ button{
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0 5px 0 0  hsl(28, 16%, 65%);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:nth-child(4){
+    background-color: rgb(149, 149, 238);
+    box-shadow: 0 5px 0 0 hsl(224, 28%, 35%);
+    color: whitesmoke;
+}
+button:nth-child(4):hover{
+    background-color: rgba(139, 139, 236, 0.856);
+}
+.last{
+    width: 185px;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color:hsl(6, 63%, 50%);
+    box-shadow: 0 5px 0 0 hsl(6, 70%, 34%);
+    color: whitesmoke;    
+}
+#reset{
+    background-color: rgb(159, 159, 252);
+    box-shadow: 0 5px 0 0 hsl(224, 28%, 35%);
+}
+#reset:hover{
+    background-color: rgba(130, 130, 245, 0.897);
+}
+button:hover{
+    background-color: whitesmoke;
+}
+.last:hover{
+    background-color: rgba(241, 124, 124, 0.829);
+}
