@@ -26,6 +26,7 @@ section{
 h2{
     margin-left: 20px;
     color: whitesmoke;
+    position: relative;
 }
 .theme{
      display: flex;
@@ -63,11 +64,21 @@ p{
     margin-bottom: 0;
     cursor: pointer;
 }
-.screen{
-    border: 2px solid black;
-    width: 460px;
-    border-radius: 10px;
-    background-color: hsl(224, 36%, 15%);
+.display{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.display input{
+    width: 100%;
+    max-width: 460px;
+    height:  80px;
+    text-align: right;
+    flex: 1;
+    border: none;
+    background-color: hsl(221, 31%, 48%);
+    color: whitesmoke;
+    font-size: 1.7em;
 }
 h1{
     text-align: end;
@@ -77,59 +88,63 @@ h1{
 .calc{
     border: none;
     width: 460px;
-    height: 375px;
+    height: 550px;
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
     background-color:  hsl(223, 31%, 20%);
 }
 .hero{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    border-radius: 5px;
+    text-align: center;
+}    
+
+.hero input{
+    width: 65px;
+    height: 60px;
+    margin: 10px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    background-color: hsl(223, 28%, 34%);
+    color: whitesmoke;
+    font-size: 1.7em;
+    
     
 }
- button{
-    border: none;
-    border-radius: 10px;
-    width: 80px;
-    height: 50px;
-    background-color: hsl(30, 25%, 89%);
-    box-shadow: 0 5px 0 0  hsl(28, 16%, 65%);
-    font-size: 30px;
-    font-weight: 700;
-    padding: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
+input.equal{
+    width: 145px;
+    height: 60px;
+    background-color: hsl(221, 31%, 48%);
+    color: red;
 }
-button:nth-child(4){
-    background-color: rgb(149, 149, 238);
-    box-shadow: 0 5px 0 0 hsl(224, 28%, 35%);
-    color: whitesmoke;
-}
-button:nth-child(4):hover{
-    background-color: rgba(139, 139, 236, 0.856);
-}
-.last{
-    width: 185px;
-    margin-left: 20px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    background-color:hsl(6, 63%, 50%);
-    box-shadow: 0 5px 0 0 hsl(6, 70%, 34%);
-    color: whitesmoke;    
-}
-#reset{
-    background-color: rgb(159, 159, 252);
-    box-shadow: 0 5px 0 0 hsl(224, 28%, 35%);
-}
-#reset:hover{
-    background-color: rgba(130, 130, 245, 0.897);
-}
-button:hover{
-    background-color: whitesmoke;
-}
-.last:hover{
-    background-color: rgba(241, 124, 124, 0.829);
-}
+ input.equal:hover{
+    background-color: rgb(39, 129, 189);
+ }
+ 
+input.operator{
+    color: red;
+ }
+ input.operator:hover{
+    background-color: rgb(39, 129, 189);
+ }
+ h2::after{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 45px;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: hsl(223, 31%, 20%);;
+ }
+ h2::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -5px;
+    left: 60px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(148, 28, 28, 0.712);
+    border-radius: 50%;
+ }
